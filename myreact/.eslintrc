@@ -1,0 +1,9 @@
+{
+  "extends": "react-app",
+  "rules": { // 语法检测的规则，取off表示关闭
+    "no-undef": "off",
+    "no-restricted-globals": "off",
+    "no-unused-vars": "off",
+    "eqeqeq": "off"
+  }
+}

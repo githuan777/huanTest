@@ -1,0 +1,26 @@
+.nav{
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	text-align: center;
+	font-size: 0.24rem;
+	height: 1rem;
+	border-top: 1px solid #ccc;
+		a {
+			flex:1;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			color: #777;
+			background-color: #fff;
+			text-decoration: none;
+		&.active {
+			color: #ff6f06;
+		}
+		i{
+			font-size: 0.5rem;
+		}
+	}
+}

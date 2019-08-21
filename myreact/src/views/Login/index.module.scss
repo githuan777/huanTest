@@ -1,0 +1,71 @@
+.login{
+    height: 100vh;
+    header{
+        background-color: #fff;
+        padding: 0.3rem;
+        display: flex;
+        justify-content: space-between;
+        color: #333;
+        border-bottom: 1px solid #c7c8ca;
+        a{
+            color: #ff6f06;
+        }
+    }
+    .form{
+        background-color: #fff;
+        padding: 0.2rem 0.3rem;
+        border-bottom: 1px solid #fafafa;
+        i{
+            font-size: 0.5rem;
+            color: #ff6f06;
+            margin-right: 0.2rem;
+        }
+        input{
+            outline: none;
+            border: none;
+            line-height: 0.8rem;
+        }
+    }
+    .btn,.weiChar{
+        margin: 0.7rem 0.3rem 0.4rem;
+        background-color: #ff6f06;
+        border-radius: 0.08rem;
+        color: #fff;
+        line-height: 0.8rem;
+        text-align: center;
+    }
+    .more{
+        padding: 0 0.3rem;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.4rem;
+    }
+    .change{
+        text-align: center;
+        line-height: 0.5rem;
+        position: relative;
+        color: #ababab;
+        .line{
+            position: absolute;
+            top:0.22rem;
+            left:-0.3rem;
+            display: inline-block;
+            width: 1.5rem;
+            border-top: 1px solid #ababab;
+            margin: 0 1rem;
+            &:last-child{
+                left:4.3rem;
+            }
+        }
+        
+    }
+    .weiChar{
+        background-color: #fff;
+        color: #555;
+        border: 1px solid #c8c8c8;
+        i{
+            color: #70f547;
+            margin-right: 0.15rem;
+        }
+    }
+}

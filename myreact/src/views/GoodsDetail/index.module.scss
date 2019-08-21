@@ -1,0 +1,171 @@
+html{
+    background-color: #fff;
+}
+.goodsDetail{
+    background-color: #fff;
+    header{
+        background-color: #fff;
+        padding: 0.3rem;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #c8c8c8;
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 1500;
+        font-size: 0.3rem;
+        i{
+            font-size: 0.32rem;
+        }
+    }
+    .img{
+        width: 100%;
+        height: 4rem;
+    }
+    .pay,.sex,.day,.bao,.how{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0.2rem;
+        .payWay,.sexWay,.dayWay,.baoWay,.howWay{
+            padding: 0.05rem;
+            font-size: 0.34rem;
+        }
+        .payOne,.sexOne,.dayOne,.baoOne{
+            display: inline-block;
+            padding: 0.1rem;
+            border-radius: 0.05rem;
+            border: 1px solid #fff;
+            font-size: 0.28rem;
+            &.active{
+                background-color: #fff7f4;
+                border: 1px solid #ff6f06;
+                color:#ff6f06;
+            }
+        }
+    }
+    .sex,.bao{
+        border-top: 1px solid #ececec;
+        padding-right: 2rem;
+        .sexOne,.baoOne{
+            padding: 0.1rem 0.4rem;
+        }
+    }
+    .bao{
+        padding-right: 1rem;
+    }
+    .day{
+        border-top: 1px solid #ececec;
+        padding-right: 0.5rem;
+        .dayOne{
+            margin: 0 0.2rem;
+            &:nth-child(5){
+                margin: 0.05rem 0;
+                margin-left: 2.2rem;
+            }
+            &:nth-child(6){
+                margin: 0.05rem 0;
+            }
+            &:nth-child(7){
+                margin: 0.05rem 0;
+            }
+        }
+    }
+    .how{
+        padding-right: 1rem;
+        .jian,.jia{
+            font-size: 0.5rem;
+            color: #666;
+            width: 0.5rem;
+            border: 1px solid #666;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 0.4rem;
+        }
+        input{
+            width: 1.5rem;
+            border: 1px solid #666;
+            outline: none;
+            text-align: center;
+            font-size: 0.28rem;
+        }
+    }
+    .compNane{
+        line-height: 1rem;
+        color: #999;
+        border-top: 1px solid #ececec;
+        border-bottom: 0.2rem solid #ececec;
+        padding-left: 0.3rem;
+        font-size: 0.28rem;
+    }
+    .introduce{
+        line-height: 1rem;
+        color: #ff6f06;
+        padding-left: 0.3rem;
+        position: relative;
+        font-size: 0.34rem;
+        &:before{
+            content: '';
+            width: 0;
+            height: 0;
+            border-left: .1rem solid transparent;
+            border-right: .1rem solid transparent;
+            border-bottom: .1rem solid #ff8300;
+            position: absolute;
+            bottom: 0.03rem;
+            left:0.75rem;
+        }
+        &:after{
+            content: '';
+            width: 1.8rem;
+            height: 0.04rem;
+            background-color: #ff8300;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+    
+    .tu{
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+        
+    }
+    footer{
+        position: sticky;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        color: #fff;
+        line-height: 1rem;
+        background: rgba(0, 0, 0, 0.6);
+        .left{
+            display: flex;
+            flex-direction: column;
+            line-height: 0.4rem;
+            padding: 0.1rem 0.3rem;
+            border-right: 1px solid #4a4a4a;
+            font-size: 0.28rem;
+            i{
+                font-size: 0.3rem;
+            }
+        }
+        .middle{
+            flex: 1;
+            font-size: 0.3rem;
+        }
+        .right{
+            width: 3rem;
+            background-color: #ff6f06;
+            font-size: 0.3rem;
+        }
+    }
+
+
+
+
+}    

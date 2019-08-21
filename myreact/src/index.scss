@@ -1,0 +1,34 @@
+// 重置样式
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+.sl{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow:ellipsis;
+}
+button input{
+  border: none;
+}
+.am-list-extra{
+  flex-basis:70%!important;
+  color: #333!important;
+}
+
+.am-search{
+  display: inline-block;
+  width: 6.8rem;
+  margin-left: 0.7rem;
+  background-color: #fff!important;
+}
+
+.am-list-item .am-list-line .am-list-content{
+  font-size: 0.34rem!important;
+}
+.am-list-extra{
+  font-size: 0.28rem!important;
+}
+// 覆盖antd-design-mobile的默认样式

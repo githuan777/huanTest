@@ -1,0 +1,70 @@
+.register{
+    height: 100vh;
+    header{
+        background-color: #fff;
+        padding: 0.3rem;
+        display: flex;
+        justify-content: space-between;
+        color: #333;
+        border-bottom: 1px solid #c7c8ca;
+        a{
+            color: #ff6f06;
+        }
+    }
+    .form{
+        background-color: #fff;
+        padding: 0.2rem 0.3rem;
+        border-bottom: 1px solid #fafafa;
+        input{
+            outline: none;
+            border: none;
+            line-height: 0.8rem;
+        }
+        &:nth-child(4){
+            position: relative;
+            .formBtn{
+                position: absolute;
+                right: 0.24rem;
+                top:0.24rem;
+                background-color: #ff6f06;
+                color: #fff;
+                border-radius: 0.08rem;
+                padding: 0.2rem;
+            }    
+        }
+        
+    }
+    p{
+        line-height: 0.8rem;
+        padding-left: 0.3rem;
+        color: #6c6c6c;
+    }
+    .btn{
+        margin: 0.3rem;
+        background-color: #ff6f06;
+        border-radius: 0.08rem;
+        color: #fff;
+        line-height: 0.8rem;
+        text-align: center;
+    }
+    .more{
+        padding-right: 0.3rem;
+        text-align: right;
+        color: #6c6c6c;
+        i{
+            font-style: normal;
+            color: #ff6f06;
+        }
+    }
+    .change{
+        text-align: center;
+        line-height: 2rem;
+        color: #ff6f06;
+        span{
+            display: inline-block;
+            line-height: 0.5rem;
+            border-bottom: 1px solid #ff6f06;
+        }
+    }
+    
+}

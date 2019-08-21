@@ -1,0 +1,47 @@
+.goodsItem{
+    height: 2.5rem;
+    border-top: 1px solid #ebecf1;
+    padding: 0.3rem;
+    display: flex;
+    color:#333;
+    .left {
+        width: 2.6rem;
+        object-fit: cover;
+        margin-right: 0.2rem;
+    }
+    .right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .name {
+            width: 4.05rem;
+            font-size: 0.3rem;
+        }
+        .title{
+            width: 4.05rem;
+            color:#999;
+            font-size: 0.28rem;
+        }
+        .textNum {
+            font-size: 0.2rem;
+            display: flex;
+            justify-content: space-between;
+            color:#999;
+        }
+        .price{
+            span{
+                color: #ff6f06;
+                font-size: 0.2rem;
+                &:nth-child(1){
+                    font-size: 0.35rem;
+                }
+            }
+            
+        }
+    }
+}
+
+
+    
+    

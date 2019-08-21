@@ -1,0 +1,182 @@
+.service{
+    background-color: #fff;
+    padding-bottom: 1rem;
+    header{
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        color: #fff;
+        background: linear-gradient(to right bottom,#f89646,#ff3c00);
+        padding-bottom: 0.3rem;
+        div{
+            display: flex;
+            flex-direction: column;
+            font-size: 0.24rem;
+            i{
+                font-size: 0.8rem;
+                line-height: 2rem;
+            }
+        }
+    }
+    // .stickTop{
+    //     width: 100%;
+    //     color:#333;
+    //     background-color: #fff;
+    //     line-height: 1rem;
+    //     text-align: center;
+    //     position: fixed;
+    //     top: 0;
+    //     left: 0;
+    //     opacity: 0;
+    //     animation :stickTop 2s 2s forwards;
+        
+    // }
+    // @keyframes stickTop {
+    //     0%{top: 0;opacity:0;}
+    //     20%{top: -50;opacity:0.2;}
+    //     40%{top: -100;opacity:0.4;}
+    //     60%{top: -150;opacity:0.6}
+    //     80%{top: -200;opacity:0.8;}
+    //     100%{top: -250;opacity:1;}
+    // }
+    
+    .vip{
+        padding: 0 0.2rem;
+        display: flex;
+        justify-content: space-between;
+        line-height: 1rem;
+        h3{
+            font-size: 0.4rem;
+            color: #333;
+            font-weight: 100;
+        }
+        div{
+            font-size: 0.24rem;
+            color: #999;
+            i{
+                font-size: 0.28rem;
+                padding-left: 0.1rem;
+            }
+        }
+    }
+    .vipTu{
+        width: 100%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding: 0 0.1rem 0.3rem;
+        margin-bottom: 0.2rem;
+        border-bottom: 1px solid #ebecf1;
+        div{
+            width: 13rem;
+            display: flex;
+            justify-content: space-around;
+            img{
+                width: 3rem;
+                height: 2rem;
+            }
+        }
+    }
+    .serv,.heathy{
+        border-bottom: 1px solid #ebecf1;
+        padding: 0.3rem;
+        margin-bottom: 0.2rem;
+        h3{
+            font-size: 0.4rem;
+            color: #333;
+            font-weight: 100;
+        }
+        p{
+            font-size: 0.24rem;
+            color: #999;
+            line-height: 0.8rem;
+            // margin-bottom: 0.3rem;
+        }
+        img{
+            margin-top: 0.3rem;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+    .lib{
+        border-bottom: 1px solid #ebecf1;
+        padding: 0.3rem;
+        margin-bottom: 0.2rem;
+        h3{
+            font-size: 0.4rem;
+            color: #333;
+            font-weight: 100;
+            padding-bottom: 0.3rem;
+        }
+        .libImg{
+            display: flex;
+            justify-content: space-between;
+            img{
+                width: 3.3rem;
+                height: 2rem;
+            }
+        }
+        
+    }
+    .heathySay{
+        border-bottom: 1px solid #ebecf1;
+        padding: 0.3rem 0;
+        margin-bottom: 0.2rem;
+        h3{
+            font-size: 0.4rem;
+            color: #333;
+            font-weight: 100;
+            padding: 0 0.3rem 0.3rem;
+        }
+        .content{
+            ul{
+                li{
+                    display: flex;
+                    padding: 0.2rem 0.3rem;
+                    border-top: 1px solid #ebecf1;
+                    .left{
+                        width: 4.6rem;
+                        .head{
+                            font-size: 0.28rem;
+                            line-height: 0.5rem;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow:ellipsis;
+                        }
+                        .adNav{
+                            span{
+                                display: inline-block;
+                                padding: 0.05rem;
+                                border: 1px solid #999;
+                                border-radius: 0.05rem;
+                                font-size: 0.2rem;
+                                color: #999;
+                                margin: 0.1rem 0.08rem;
+                            }
+                        }
+                        .adShow{
+                            display: flex;
+                            p{
+                                padding: 0.2rem;
+                                font-size: 0.24rem;
+                                i{
+                                    margin-right: 0.1rem;
+                                    font-size: 0.28rem;
+                                }
+                            }
+                        }
+                    }
+                    .right{
+                        img{
+                            width: 2rem;
+                            height: 1.6rem;
+                            margin-left: .2rem;
+                            display: block;
+                            background-color: #ebecf1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
