@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            margin: 80px auto;
+            border: 2px solid pink;
+            width: 400px;
+            height: 400px;
+        }
+        .cell{
+            margin: 80px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        label{
+            width: 100px;
+        }
+        input{
+            flex: 1;
+        }    
+    </style>
+</head>
+<body>
+    <form class="container" method="post" action="http://localhost:8888/user/login">
+        <p class="cell">
+            <label for="username">用户名</label>
+            <input type="text" id="username" name="username">
+        </p>  
+    
+        <p class="cell">
+            <label for="password">密码</label>
+            <input type="text" id="password" name="password">
+        </p>
+    
+        <p class="cell">
+            <button id="btn" type="submit">使用jquery</button>
+        </p>
+    </form>
+
+    <script src="../javascripts/jquery.js"></script>
+    <script>
+        document.querySelector('#btn').onclick = function(event){
+            var username = document.querySelector('#username').value
+            var password = document.querySelector('#password').value
+
+            $.ajax({
+                method: 'post',
+                url: 'http://localhost:8888/userinfos/login',
+                data: {
+                    username,
+                    password
+                },                
+                success(res){
+                    const {code,msg,token} = res
+                    
+                    if(code == 1){
+                        // 如果登录成功，获取后端返回的token，并把它存到本地
+                        localStorage.setItem('token',token)
+
+                        // 返回到上一个页面
+                        const url = sessionStorage.getItem('backUrl')
+                        location.href = url || 'index.html'
+                    }else{
+                        alert(msg)
+                    }
+                }
+            })
+
+            // 禁止表单默认提交
+            return false
+        }        
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品详情</title>
+</head>
+
+<body>
+    <div class="content">
+
+    </div>
+
+    <button id="btn">点击添加到购物车</button>
+
+</body>
+
+<script src="../javascripts/jquery.js"></script>
+<script>
+    $.ajax({
+        type: 'post',
+        url: 'http://localhost:8888/goods/detail',
+        data: {
+            goodsId: '5d25c687a0caae2e20d51289'
+        },
+        success(obj) {
+            if (obj.code == 1) {
+                var { code, msg, goodsDesc, goodsPrice, goodsNum } = obj
+                $(".content").html(
+                    `
+                    <div class="goodsDesc">${goodsDesc}</div>
+                    <div class="goodsPrice">${goodsPrice}</div>
+                    <div class="goodsNum">${goodsNum}</div>              
+                    `
+                )
+            } else {
+                alert(msg)
+            }
+        }
+    })
+
+    $("#btn").on("click", () => {
+        var token = localStorage.getItem("token")
+        if (!token) {
+            sessionStorage.setItem("backUrl", location.href)
+            location.href = "login.html"
+            return false
+        }
+        $.ajax({
+            type: "post",
+            url: "http://localhost:8888/cart/add",
+            data: {
+                id: goodsId,
+                token
+            },
+            success(obj) {
+                const { code, msg, info } = obj
+                if (code == 1) {
+                    console.log(msg)
+                } else if (code == -2) {
+                    sessionStorage.setItem('backUrl', location.href)
+                    location.href = 'login.html'
+                }
+            }
+        })
+    })
+
+</script>
+
+</html>

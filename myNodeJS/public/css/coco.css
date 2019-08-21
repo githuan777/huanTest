@@ -1,0 +1,335 @@
+@charset "UTF-8";
+body, p, h1, h2, h3, h4, h5, h6, dl, ol, ul, dt, dd, input, textarea {
+  padding: 0;
+  margin: 0; }
+
+h1, h2, h3, h4, h5, h6, dt {
+  font-weight: normal; }
+
+img {
+  vertical-align: top;
+  border: 0; }
+
+a {
+  color: inherit !important;
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+body {
+  font-family: "微软雅黑","宋体",Arial;
+  font-size: 16px;
+  color: #333;
+  background-color: #f8f8f8; }
+
+a:hover {
+  color: #fd3636 !important;
+  text-decoration: none; }
+
+.sl {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.w {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.cl:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden; }
+
+.cl {
+  zoom: 1; }
+
+.coco-header {
+  position: relative;
+  width: 100%; }
+  .coco-header header {
+    width: 100%;
+    position: absolute;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    padding: 10px 20px; }
+    .coco-header header h1 {
+      width: 180px;
+      height: 50px;
+      margin-right: 15px;
+      float: left; }
+      .coco-header header h1 a {
+        width: 180px;
+        height: 50px;
+        display: block;
+        line-height: 200px;
+        overflow: hidden;
+        background: url(../img/icon_all.png) no-repeat -200px -56px; }
+    .coco-header header ul {
+      height: 40px;
+      position: relative;
+      float: left;
+      margin-top: 5px; }
+      .coco-header header ul li {
+        float: left;
+        height: 40px;
+        line-height: 40px;
+        color: #FFF;
+        margin-right: 15px;
+        position: relative; }
+        .coco-header header ul li a {
+          padding: 0 12px; }
+      .coco-header header ul li.header-li2 {
+        position: relative; }
+        .coco-header header ul li.header-li2 a.icon {
+          float: left;
+          padding-right: 15px;
+          background: url(../img/icon_all.png) no-repeat right -484px; }
+        .coco-header header ul li.header-li2:hover .icon {
+          background: url(../img/icon_all.png) no-repeat right -584px; }
+        .coco-header header ul li.header-li2 .header-li2-hide {
+          display: none;
+          position: absolute;
+          top: 40px;
+          left: -50px;
+          padding-top: 10px; }
+          .coco-header header ul li.header-li2 .header-li2-hide .divp {
+            position: relative;
+            width: 180px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            border-left: 5px solid #34343e;
+            background: #34343e;
+            cursor: pointer;
+            border-bottom: 1px solid #3d3d44; }
+            .coco-header header ul li.header-li2 .header-li2-hide .divp .there-hide {
+              display: none;
+              position: absolute;
+              width: 540px;
+              top: 0;
+              left: 175px; }
+              .coco-header header ul li.header-li2 .header-li2-hide .divp .there-hide dd {
+                float: left;
+                width: 90px;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                border-right: 1px solid #4b4b52;
+                border-bottom: 1px solid #4b4b52;
+                background: #3f3f48; }
+                .coco-header header ul li.header-li2 .header-li2-hide .divp .there-hide dd:hover {
+                  background-color: #3d3d44; }
+            .coco-header header ul li.header-li2 .header-li2-hide .divp:hover {
+              border-left: 5px solid #fd3636;
+              background-color: #3d3d44; }
+            .coco-header header ul li.header-li2 .header-li2-hide .divp:hover .there-hide {
+              display: block; }
+        .coco-header header ul li.header-li2:hover .header-li2-hide {
+          display: block; }
+      .coco-header header ul .header-li7 a.icon {
+        float: left;
+        padding-right: 15px;
+        background: url(../img/icon_all.png) no-repeat right -484px; }
+      .coco-header header ul .header-li7 .header-li7-hide {
+        width: 175px;
+        padding-top: 18px;
+        position: absolute;
+        top: 40px;
+        left: -48px;
+        z-index: 999999999;
+        display: none; }
+        .coco-header header ul .header-li7 .header-li7-hide p {
+          width: 170px;
+          line-height: 64px;
+          text-align: center;
+          background: #34343e;
+          border-left: 5px solid #34343e;
+          border-bottom: 1px solid #3d3d44;
+          cursor: pointer; }
+          .coco-header header ul .header-li7 .header-li7-hide p:hover {
+            border-left: 5px solid #fd3636;
+            color: #fff;
+            background-color: #3d3d44; }
+      .coco-header header ul .header-li7:hover .header-li7-hide {
+        display: block; }
+      .coco-header header ul .header-li7:hover .icon {
+        background: url(../img/icon_all.png) no-repeat right -584px; }
+    .coco-header header .search {
+      width: 240px;
+      height: 34px;
+      background: url(../img/icon_all.png) no-repeat -200px -140px;
+      position: absolute;
+      top: 17px;
+      right: 200px; }
+      .coco-header header .search input {
+        width: 185px;
+        height: 25px;
+        margin-left: 10px;
+        margin-top: 5px;
+        outline: none;
+        border: 1px #fff solid;
+        vertical-align: top;
+        font-size: 14px; }
+      .coco-header header .search .btn {
+        width: 28px;
+        height: 28px;
+        outline: none;
+        border: 1px #fff solid;
+        opacity: 0;
+        cursor: pointer; }
+    .coco-header header .user {
+      width: 150px;
+      float: right;
+      margin-top: 6px; }
+  .coco-header #myCarousel img {
+    width: 100%;
+    height: 100%; }
+
+section .nav {
+  height: 74px;
+  background: #fff;
+  margin-top: 20px; }
+  section .nav ul {
+    height: 74px;
+    text-align: center;
+    margin-left: 25%; }
+    section .nav ul li {
+      line-height: 74px;
+      float: left;
+      margin: 0 33px; }
+section .list ul li {
+  background: #fff;
+  float: left;
+  height: 360px;
+  width: 296px;
+  padding: 30px;
+  margin: 2px;
+  position: relative; }
+  section .list ul li dl dt {
+    width: 236px;
+    height: 236px;
+    margin-bottom: 18px; }
+    section .list ul li dl dt img {
+      width: 236px;
+      height: 236px; }
+  section .list ul li dl dd {
+    line-height: 30px; }
+  section .list ul li dl dd.pricebox .price {
+    color: #fd3636; }
+    section .list ul li dl dd.pricebox .price .rmb {
+      font-size: 14px;
+      margin-right: 3px;
+      font-family: Arial, Helvetica, sans-serif; }
+    section .list ul li dl dd.pricebox .price .m-num {
+      font-size: 20px;
+      font-family: Georgia, "Times New Roman", Times, serif; }
+  section .list ul li dl dd.pricebox .num {
+    color: #999;
+    font-size: 14px;
+    float: right; }
+  section .list ul li:hover {
+    top: -2px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18); }
+section .list ul li.zd .dz {
+  position: absolute;
+  background: url(../img/icon_all.png) no-repeat -200px -300px;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #FFF;
+  text-align: center;
+  font-size: 12px;
+  right: 20px;
+  bottom: 80px; }
+section ul.pagination {
+  display: block;
+  height: 40px; }
+  section ul.pagination li {
+    width: 100%;
+    height: 40px; }
+    section ul.pagination li a {
+      margin: 0 5px; }
+    section ul.pagination li a.first {
+      display: inline-block;
+      margin-left: 37%; }
+
+.gengduo .w {
+  height: 65px;
+  line-height: 65px;
+  background-color: #fff;
+  text-align: center;
+  margin: 5px auto 20px auto;
+  color: #999; }
+
+footer {
+  background-color: #fff;
+  text-align: center;
+  padding: 20px 0; }
+  footer .foot-top {
+    padding: 30px 0; }
+    footer .foot-top .footer-loge {
+      width: 190px;
+      float: left;
+      margin-right: 50px; }
+      footer .foot-top .footer-loge a {
+        display: block;
+        width: 180px;
+        height: 50px;
+        background: url(../img/icon_all.png) no-repeat -200px 0;
+        margin-top: 30px; }
+    footer .foot-top dl {
+      float: left;
+      width: 240px;
+      text-align: left; }
+      footer .foot-top dl dt {
+        line-height: 26px;
+        margin-bottom: 10px;
+        color: #333; }
+      footer .foot-top dl dd {
+        line-height: 26px;
+        font-size: 14px;
+        color: #666; }
+  footer .foot-middle {
+    margin-bottom: 15px;
+    border: 1px solid #e6e6e6;
+    border-left: none;
+    border-right: none;
+    padding: 8px 0;
+    text-align: left;
+    font-size: 14px; }
+    footer .foot-middle span {
+      line-height: 26px;
+      color: #666; }
+    footer .foot-middle a {
+      color: #c1c1c1 !important;
+      margin-right: 15px; }
+      footer .foot-middle a:hover {
+        color: #fd3636  !important; }
+  footer .foot-bottom {
+    color: #acacac;
+    font-size: 14px; }
+
+.tbox {
+  width: 52px;
+  position: fixed;
+  right: 10px;
+  bottom: 15px; }
+  .tbox .love {
+    display: block;
+    width: 52px;
+    height: 52px;
+    background: url(../img/icon_all.png) no-repeat -262px -400px;
+    margin-bottom: 10px; }
+  .tbox .totop {
+    display: block;
+    width: 52px;
+    height: 52px;
+    background: url(../img/icon_all.png) no-repeat -262px -452px; }
+
+/*# sourceMappingURL=coco.css.map */
